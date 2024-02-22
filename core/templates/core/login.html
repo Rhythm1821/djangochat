@@ -1,11 +1,11 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Sign Up {% endblock %}
+{% block title %}Log In {% endblock %}
 
 {% block content %}
 
 <div class="p-10 lg:p-20 text-center">
-    <h1 class="text-3xl lg:text-6xl text-white">Sign up</h1>
+    <h1 class="text-3xl lg:text-6xl text-white">Log In</h1>
 </div>
 
 <form action="." method="post" class="lg:w-1/4 px-4 mx-auto">
@@ -16,11 +16,7 @@
     </div>
     <div class="mb-5">
         <label class="text-white">Password</label>
-        <input type="text" name="password1" class="w-full mt-2 px-4 py-2 rounded-xl">
-    </div>
-    <div class="mb-5">
-        <label class="text-white">Repeat Password</label>
-        <input type="text" name="password2" class="w-full mt-2 px-4 py-2 rounded-xl">
+        <input type="text" name="password" class="w-full mt-2 px-4 py-2 rounded-xl">
     </div>
 
     {% if form.errors %}
